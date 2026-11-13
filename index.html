@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Santiago · Desarrollador web</title>
+  <meta name="description" content="Portafolio de Santiago: desarrollador web con Python, Django, JavaScript y Next.js. Proyectos, habilidades y contacto.">
+  <meta property="og:title" content="Santiago · Desarrollador web">
+  <meta property="og:description" content="Proyectos, habilidades y contacto.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // Aplica el tema guardado antes de pintar para evitar parpadeo
+    try { var t = localStorage.getItem('tema'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <header class="barra">
+    <nav class="nav contenedor" aria-label="Principal">
+      <a class="logo" href="#inicio">santiago<span>.dev</span></a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
+        <span></span><span></span>
+      </button>
+      <ul id="menu" class="menu">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li>
+          <button class="tema-btn" aria-label="Cambiar tema claro/oscuro" title="Cambiar tema">
+            <svg class="icono-sol" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+            <svg class="icono-luna" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <!-- ============ INICIO ============ -->
+    <section id="inicio" class="hero contenedor">
+      <div class="hero-texto">
+        <p class="etiqueta">Hola, soy</p>
+        <h1>Santiago<br><span class="degradado">desarrollador web</span></h1>
+        <p class="hero-sub">
+          Construyo aplicaciones web completas: desde el modelo de la base de datos
+          hasta la interfaz que usa el cliente final. Me gusta convertir procesos reales
+          de un negocio en software que se pueda usar todos los días.
+        </p>
+        <div class="acciones">
+          <a class="btn btn-principal" href="#proyectos">Ver proyectos</a>
+          <a class="btn btn-secundario" href="#contacto">Contactarme</a>
+        </div>
+      </div>
+      <div class="hero-tarjeta" aria-hidden="true">
+        <div class="ventana">
+          <div class="ventana-barra"><i></i><i></i><i></i><span>santiago.py</span></div>
+<pre><code><span class="k">class</span> <span class="f">Desarrollador</span>:
+    nombre = <span class="s">"Santiago"</span>
+    stack = [<span class="s">"Python"</span>, <span class="s">"Django"</span>,
+             <span class="s">"JavaScript"</span>, <span class="s">"Next.js"</span>]
+    aprendiendo = <span class="k">True</span>
+
+    <span class="k">def</span> <span class="f">construir</span>(self, idea):
+        <span class="k">return</span> idea.<span class="f">desplegar</span>()</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SOBRE MÍ ============ -->
+    <section id="sobre-mi" class="seccion contenedor">
+      <h2 class="titulo-seccion"><span>01</span> Sobre mí</h2>
+      <div class="sobre-grid">
+        <div class="sobre-texto">
+          <!-- EDITA: cuenta aquí quién eres, qué estudias y dónde -->
+          <p>
+            Soy un desarrollador en formación enfocado en el desarrollo web con
+            <strong>Python y Django</strong>. He llevado proyectos desde el análisis
+            (diagramas UML, modelo relacional, casos de uso) hasta el despliegue en la nube.
+          </p>
+          <p>
+            Disfruto entender cómo funciona un negocio por dentro —inventario, pedidos,
+            pagos, domicilios— y traducirlo en una aplicación ordenada, probada y fácil de usar.
+            También me gusta experimentar con juegos web y con interfaces interactivas.
+          </p>
+          <p>
+            Ahora mismo estoy profundizando en <strong>React / Next.js</strong>,
+            bases de datos <strong>PostgreSQL</strong> y buenas prácticas de despliegue.
+          </p>
+        </div>
+        <ul class="datos">
+          <li><span class="dato-num" data-contar="3">0</span><span>proyectos destacados</span></li>
+          <li><span class="dato-num" data-contar="14">0</span><span>módulos en Dlune</span></li>
+          <li><span class="dato-num" data-contar="1">0</span><span>tienda en producción</span></li>
+          <li><span class="dato-emoji">☕</span><span>muchas tazas de café</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ HABILIDADES ============ -->
+    <section id="habilidades" class="seccion contenedor">
+      <h2 class="titulo-seccion"><span>02</span> Habilidades</h2>
+      <div class="skills-grid">
+        <article class="skill-grupo">
+          <h3>Backend</h3>
+          <ul class="chips">
+            <li>Python</li><li>Django</li><li>ORM de Django</li><li>APIs REST</li><li>Autenticación y roles</li><li>Pruebas unitarias</li>
+          </ul>
+        </article>
+        <article class="skill-grupo">
+          <h3>Frontend</h3>
+          <ul class="chips">
+            <li>HTML semántico</li><li>CSS / diseño responsive</li><li>JavaScript</li><li>TypeScript</li><li>React</li><li>Next.js</li><li>Tailwind CSS</li>
+          </ul>
+        </article>
+        <article class="skill-grupo">
+          <h3>Bases de datos</h3>
+          <ul class="chips">
+            <li>SQL</li><li>PostgreSQL</li><li>SQLite</li><li>MySQL Workbench</li><li>Modelo relacional</li><li>Drizzle ORM</li>
+          </ul>
+        </article>
+        <article class="skill-grupo">
+          <h3>Herramientas y despliegue</h3>
+          <ul class="chips">
+            <li>Git y GitHub</li><li>Render</li><li>GitHub Pages</li><li>Gunicorn</li><li>VS Code</li><li>Claude Code</li>
+          </ul>
+        </article>
+        <article class="skill-grupo">
+          <h3>Análisis y diseño</h3>
+          <ul class="chips">
+            <li>Diagramas UML</li><li>Casos de uso</li><li>Diagramas de flujo</li><li>Diagramas de estados</li><li>Levantamiento de requisitos</li>
+          </ul>
+        </article>
+        <article class="skill-grupo">
+          <h3>Habilidades blandas</h3>
+          <ul class="chips">
+            <li>Trabajo en equipo</li><li>Comunicación con clientes</li><li>Resolución de problemas</li><li>Aprendizaje autónomo</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ PROYECTOS ============ -->
+    <section id="proyectos" class="seccion contenedor">
+      <h2 class="titulo-seccion"><span>03</span> Proyectos</h2>
+
+      <div class="filtros" role="group" aria-label="Filtrar proyectos">
+        <button class="filtro activo" data-filtro="todos" aria-pressed="true">Todos</button>
+        <button class="filtro" data-filtro="django" aria-pressed="false">Django</button>
+        <button class="filtro" data-filtro="react" aria-pressed="false">React / Next.js</button>
+        <button class="filtro" data-filtro="html" aria-pressed="false">HTML</button>
+      </div>
+
+      <div class="proyectos-grid">
+        <article class="proyecto destacado" data-tags="django">
+          <div class="proyecto-portada portada-dlune" aria-hidden="true">
+            <span class="portada-icono">🌙</span>
+            <span class="portada-nombre">Dlune</span>
+          </div>
+          <div class="proyecto-cuerpo">
+            <p class="proyecto-tipo">Tienda en línea · En producción</p>
+            <h3>Dlune — Tienda de pijamas con estampados</h3>
+            <p>
+              Sistema completo para una tienda real: catálogo con fotos y filtros, carrito,
+              pedidos con historial de estados, pagos y cupones, inventario con alertas de
+              stock bajo, domicilios por zonas, clientes VIP, campañas por WhatsApp,
+              reportes exportables a Excel y un panel de administración por roles.
+            </p>
+            <ul class="lista-logros">
+              <li>14 apps de Django organizadas por dominio</li>
+              <li>5 roles: admin, vendedor, bodega, repartidor y cliente</li>
+              <li>Aviso al administrador por cada pedido nuevo</li>
+              <li>Desplegado en Render con PostgreSQL</li>
+            </ul>
+            <ul class="chips chips-sm">
+              <li>Python</li><li>Django</li><li>PostgreSQL</li><li>Render</li><li>Gunicorn</li>
+            </ul>
+            <div class="proyecto-enlaces">
+              <a href="https://dlune.onrender.com" target="_blank" rel="noopener">Ver en vivo ↗</a>
+              <a href="https://github.com/santiago203485-blip/Pr_Dlun_e" target="_blank" rel="noopener">Código ↗</a>
+            </div>
+            <p class="nota">El servidor gratuito puede tardar ~30 s en despertar.</p>
+          </div>
+        </article>
+
+        <article class="proyecto" data-tags="react">
+          <div class="proyecto-portada portada-piratas" aria-hidden="true">
+            <span class="portada-icono">🏴‍☠️</span>
+            <span class="portada-nombre">Pirate Verb Quest</span>
+          </div>
+          <div class="proyecto-cuerpo">
+            <p class="proyecto-tipo">Juego educativo</p>
+            <h3>Pirate Verb Quest</h3>
+            <p>
+              Juego web para aprender verbos en inglés navegando como pirata: un mapa
+              de islas con niveles, preguntas con sonido, barcos desbloqueables,
+              logros, perfil de jugador y tabla de clasificación.
+            </p>
+            <ul class="lista-logros">
+              <li>Registro e inicio de sesión propios</li>
+              <li>API de partidas: iniciar, responder y completar nivel</li>
+              <li>Ranking global y sistema de logros</li>
+            </ul>
+            <ul class="chips chips-sm">
+              <li>Next.js</li><li>React</li><li>TypeScript</li><li>Tailwind</li><li>PostgreSQL</li><li>Drizzle</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="proyecto" data-tags="html">
+          <div class="proyecto-portada portada-caqueta" aria-hidden="true">
+            <span class="portada-icono">🌿</span>
+            <span class="portada-nombre">Caquetá Vive</span>
+          </div>
+          <div class="proyecto-cuerpo">
+            <p class="proyecto-tipo">Sitio de turismo</p>
+            <h3>Caquetá Vive Tours</h3>
+            <p>
+              Sitio para una agencia de turismo de Florencia, Caquetá: «la puerta de entrada
+              a la Amazonia colombiana». Destinos, quiénes somos, testimonios, preguntas
+              frecuentes y formulario de reserva.
+            </p>
+            <ul class="lista-logros">
+              <li>HTML semántico puro, sin CSS ni JS</li>
+              <li>Jerarquía de títulos correcta y accesible</li>
+              <li>Metadatos SEO y formulario validado</li>
+            </ul>
+            <ul class="chips chips-sm">
+              <li>HTML5</li><li>Accesibilidad</li><li>SEO</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section id="contacto" class="seccion contenedor">
+      <div class="contacto-caja">
+        <h2 class="titulo-seccion"><span>04</span> Hablemos</h2>
+        <p>
+          ¿Tienes un proyecto, una práctica o una vacante? Escríbeme y con gusto conversamos.
+        </p>
+        <div class="contacto-enlaces">
+          <a class="btn btn-principal" href="https://github.com/santiago203485-blip" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17 4.6 18 4.9 18 4.9c.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg>
+            GitHub
+          </a>
+          <!-- EDITA: cambia por tu correo real -->
+          <a class="btn btn-secundario" href="mailto:tu-correo@ejemplo.com">Correo</a>
+          <!-- EDITA: cambia por tu perfil de LinkedIn o bórralo -->
+          <a class="btn btn-secundario" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie contenedor">
+    <p>© <span id="anio">2026</span> Santiago · Hecho a mano con HTML, CSS y JavaScript</p>
+    <a href="#inicio">Volver arriba ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
