@@ -17,6 +17,6 @@ Para agregar un proyecto, copia un bloque `<article class="proyecto">` y ajusta 
 
 ## Despliegue (GitHub Pages)
 
-1. El repositorio se llama `santiago203485-blip.github.io`.
+1. El repositorio es `santiago203485-blip/me`.
 2. En GitHub: **Settings → Pages → Source: Deploy from a branch → `main` / `(root)`**.
-3. Cada `git push` a `main` publica los cambios en https://santiago203485-blip.github.io en 1–2 minutos.
+3. Cada `git push` a `main` publica los cambios en https://santiago203485-blip.github.io/me/ en 1–2 minutos.
