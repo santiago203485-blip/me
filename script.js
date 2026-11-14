@@ -52,7 +52,7 @@ function contar(el) {
 }
 
 // ---------- Aparición al hacer scroll + sección activa ----------
-const elementos = document.querySelectorAll('.titulo-seccion, .sobre-grid, .skill-grupo, .proyecto, .contacto-caja');
+const elementos = document.querySelectorAll('.titulo-seccion, .sobre-grid, .proyecto, .contacto-caja');
 if ('IntersectionObserver' in window) {
   elementos.forEach(el => el.classList.add('aparecer'));
   const obs = new IntersectionObserver(entradas => {

@@ -164,14 +164,6 @@ img, svg { max-width: 100%; }
 .dato-num, .dato-emoji { font-family: "Space Grotesk", sans-serif; font-size: 2.2rem; font-weight: 700; color: var(--acento); line-height: 1; }
 .datos li span:last-child { color: var(--texto-suave); font-size: .92rem; }
 
-/* ============ Habilidades ============ */
-.skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
-.skill-grupo {
-  background: var(--fondo-alt); border: 1px solid var(--borde); border-radius: var(--radio);
-  padding: 24px; transition: transform .25s, border-color .25s;
-}
-.skill-grupo:hover { transform: translateY(-4px); border-color: var(--acento); }
-.skill-grupo h3 { margin: 0 0 16px; font-size: 1.15rem; }
 .chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
 .chips li {
   background: var(--chip); color: var(--chip-texto); padding: 5px 12px; border-radius: 999px;
@@ -261,7 +253,7 @@ img, svg { max-width: 100%; }
   .hero { grid-template-columns: 1fr; min-height: auto; padding-top: 40px; }
   .ventana { transform: none; }
   .sobre-grid { grid-template-columns: 1fr; }
-  .skills-grid { grid-template-columns: repeat(2, 1fr); }
+
   .proyectos-grid { grid-template-columns: 1fr; }
   .proyecto.destacado { flex-direction: column; }
   .proyecto.destacado .proyecto-portada { min-height: 190px; }
@@ -269,7 +261,7 @@ img, svg { max-width: 100%; }
 
 @media (max-width: 680px) {
   .seccion { padding-block: 64px; }
-  .skills-grid { grid-template-columns: 1fr; }
+
   .menu-btn {
     display: flex; flex-direction: column; justify-content: center; gap: 6px;
     width: 42px; height: 42px; border: 1px solid var(--borde); border-radius: 10px;
